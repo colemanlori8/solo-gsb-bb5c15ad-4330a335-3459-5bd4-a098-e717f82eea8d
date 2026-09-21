@@ -1,0 +1,8 @@
+services:
+  stage-cue-chain:
+    build: .
+    image: stage-cue-chain:latest
+    container_name: stage-cue-chain
+    ports:
+      - "8080:80"
+    restart: unless-stopped
